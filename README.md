@@ -24,7 +24,6 @@
 - **Initialize** the SDK with a developer secret and project token.
 - **Track events** with metadata and tags.
 - **Identify users** for personalization and analytics.
-- **Check API usage limits** before sending events.
 - **Enable or disable** tracking globally.
 
 ## Installation
