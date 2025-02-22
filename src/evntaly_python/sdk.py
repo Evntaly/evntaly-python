@@ -23,16 +23,21 @@ class EvntalySDK:
         url = f"{self.BASE_URL}/api/v1/account/check-limits/{self.developer_secret}"
         headers = {
             "Content-Type": "application/json",
-            "X-Project-Token": self.project_token,
         }
         
         try:
             response = requests.get(url, headers=headers)
             response.raise_for_status()
-            return response.json().get("allowed", False)
+
+            data = response.json()
+            if "limitReached" not in data:
+                print("Unexpected response:", data)
+                return False  # Default behavior if key is missing
+
+            return not data["limitReached"]  # ✅ Return True if limit is NOT reached
         except requests.RequestException as e:
             print(f"Error checking limit: {e}")
-            return False
+            return False  # Fails safe (assumes limit is reached)
 
     def track(self, event_data: dict):
         """
@@ -46,7 +51,7 @@ class EvntalySDK:
             print("checkLimit returned false. Event not sent.")
             return
 
-        url = f"{self.BASE_URL}/api/v1/register/user"
+        url = f"{self.BASE_URL}/api/v1/register/event"
         headers = {
             "Content-Type": "application/json",
             "secret": self.developer_secret,
