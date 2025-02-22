@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="evntaly_python",
-    version="1.0.13",
+    version="1.0.14",
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     install_requires=["requests"],
