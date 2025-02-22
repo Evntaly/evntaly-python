@@ -8,11 +8,11 @@
 <p align="center">
  An advanced event tracking and analytics platform designed to help developers capture, analyze, and react to user interactions efficiently.
 </p>
-<!-- <p align="center">
-  <a href="https://www.npmjs.com/package/evntaly-js"><img src="https://img.shields.io/npm/v/evntaly-js.svg" alt="npm version"></a>
-  <a href="https://www.npmjs.com/package/evntaly-js"><img src="https://img.shields.io/npm/dm/evntaly-js.svg" alt="npm downloads"></a>
-  <a href="https://www.npmjs.com/package/evntaly-js"><img src="https://img.shields.io/npm/l/evntaly-js.svg" alt="license"></a>
-</p> -->
+<p align="center">
+  <a href="https://pypi.org/project/evntaly-python/"><img src="https://img.shields.io/pypi/v/evntaly-python.svg" alt="PyPI version"></a>
+  <a href="https://pypi.org/project/evntaly-python/"><img src="https://img.shields.io/pypi/dm/evntaly-python.svg" alt="PyPI downloads"></a>
+  <a href="https://pypi.org/project/evntaly-python/"><img src="https://img.shields.io/pypi/l/evntaly-python.svg" alt="license"></a>
+</p>
 
 
 # evntaly-python
