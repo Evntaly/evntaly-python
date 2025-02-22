@@ -32,7 +32,7 @@
 Install the SDK using pip:
 
 ```bash
-pip install evntaly-sdk
+pip install evntaly-python
 ```
 
 ## Usage
@@ -42,7 +42,7 @@ pip install evntaly-sdk
 Initialize the SDK with your developer secret and project token:
 
 ```python
-from evntaly_sdk import EvntalySDK
+from evntaly_python import EvntalySDK 
 
 evntaly = EvntalySDK("YOUR_DEVELOPER_SECRET", "YOUR_PROJECT_TOKEN")
 ```
@@ -92,17 +92,6 @@ evntaly.identify_user({
         "timezone": "America/New_York"
     }
 })
-```
-
-### Checking API Usage Limits
-
-Before tracking events, check if you're within API usage limits:
-
-```python
-if evntaly.check_limit():
-    evntaly.track({"title": "User Login"})
-else:
-    print("Usage limit reached. Event not tracked.")
 ```
 
 ### Enabling/Disabling Tracking
