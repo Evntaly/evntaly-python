@@ -114,20 +114,6 @@ evntaly.disable_tracking()  # Disables tracking
 evntaly.enable_tracking()   # Enables tracking
 ```
 
-## Running Tests
-
-To test the SDK functionality:
-
-```bash
-pytest tests/
-```
-
-Ensure you have **pytest** installed:
-
-```bash
-pip install pytest
-```
-
 
 ## License
 
