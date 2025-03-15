@@ -6,7 +6,7 @@ class EvntalySDK:
     It allows developers to initialize the SDK, track events, identify users, and check usage limits.
     """
 
-    BASE_URL = "https://evntaly.com/prod"
+    BASE_URL = "https://app.evntaly.com/prod"
 
     def __init__(self, developer_secret: str, project_token: str):
         """
